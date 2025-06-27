@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオサイト">
+    <title>Hayato portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+    <div id="scroll-down" style="display:none;">
+        <span>↓ 下にスクロール ↓</span>
+    </div>
+        <header>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="#instagram">Instagram</a>
+            </nav>
+        </header>
+        <div class="main-content">
+        <div class="hero-top">
+            <p>Designing with precision.</p>
+        </div>
+        <section class="hero">
+            <div class="hero-left">
+                <img src="imges/my-photo.jpg" alt="プロフィール写真" class="profile-photo">
+                <p class="degree">Bachelor's degree in Engineering<br>from Osaka Institute of Technology.</p>
+            </div>
+            <div class="hero-right">
+                <p class="hero-right-top">Coding with vision</p>
+                <h1>Hi, I'm Hayato</h1>
+                <p class="intro">
+                    focused on building modern,<br>
+                    elegant, and reactive interfaces.
+                </p>
+                <div class="skill-item">
+                    <img src="imges/photoshop-icon.png" alt="Photoshop" class="ps-icon">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p id="about-text">
+                I started learning programming about a year ago, simply out of curiosity.<br>
+                As I began writing my first lines of code and saw them come to life,<br>
+                I realized how powerful and creative programming could be.<br>
+                Now, I'm skilled in HTML, CSS, JavaScript, React, and PHP.<br>
+                I love turning ideas into functional and visually engaging websites,<br>
+                and I'm always eager to learn more and take on new challenges.
+            </p>
+        </section>
+
+        <section id="goal">
+            <h2 id="goal-title">My goal</h2>
+            <p id="goal-desc">
+                is to create interactive web applications<br>
+                that not only work great but also inspire users.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2 id="projects-title">Projects</h2>
+            <div id="project-list">
+                <div class="project-card"></div>
+                <div class="project-card center">
+                    <span>作品を並べる</span>
+                </div>
+                <div class="project-card"></div>
+            </div>
+            <div id="project-detail">
+                作品の詳細
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 id="skills-title">Skills</h2>
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="imges/HTML-icon.png" alt="HTML5">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <img src="imges/css-icon.png" alt="CSS3">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <img src="imges/javascript-icon.png" alt="JavaScript" class="javascript-icon">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="imges/php-icon.svg" alt="PHP">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        <span>50%</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <img src="imges/REact-icon.png" alt="React">
+                    <div class="skill-progress">
+                        <span>Progress</span>
+                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 id="contact-title">contact</h2>
+            <form action="send_mail.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="instagram">
+            <h2 id="instagram-title">Instagram</h2>
+            <div id="instagram-content">
+                <div id="instagram-image">
+                    <span>ココに作品を載せていく</span>
+                </div>
+                <div id="instagram-description">
+                    <p>作品の説明文<br>
+                    すべてInstagramにのせることによって<br>
+                    アクセス数を取っていく作戦</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Hayato portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

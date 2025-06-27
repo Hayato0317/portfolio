@@ -1,0 +1,1003 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif,Orbitron,Baskerville Old Face;
+    background-color: #0f0f0f;
+}
+header{
+    background: #222;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-family: Orbitron;
+}
+
+header nav {
+    display: flex;
+    gap: 32px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+header nav a:hover {
+    background: #444;
+    color: #00ffff;
+}
+
+.hero-top{
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-family: Orbitron;
+    margin-right: 20vw;
+    max-width: 100%;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1.5);
+    margin:0 auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    font-family: 'Noto Sans JP', Orbitron, sans-serif;
+}
+.hero-left, .hero-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-left{
+    margin-left: 15%;
+}
+.profile-photo {
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.degree {
+    font-size: 2.0rem;
+    text-align: center;
+    margin-top: 0;
+    font-family: Baskerville Old Face;
+}
+.hero-right-top{
+    font-family: Orbitron;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1.5);
+}
+.hero-right {
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.hero-right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    font-family: Baskerville Old Face;
+}
+
+.intro {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    font-family: Baskerville Old Face;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ps-icon {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 5px #252525);
+    margin-left: 10%;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 10px;
+    background: #222;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 90%;
+    margin-left: 3px;
+    background: #229bff;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #00bfff,
+    0 0 40px #00bfff;
+}
+
+#about {
+    background: rgba(30, 30, 30, 0.95); /* 半透明の黒背景 */
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 32px 24px;
+    max-width: 95vw;
+    width: 90%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Baskerville Old Face;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+
+#about p {
+    margin: 0;
+}
+
+#goal {
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Baskerville Old Face', serif;
+    background: transparent;
+}
+
+#goal h2 {
+    font-size: 4rem;
+    font-family: 'Baskerville Old Face', serif;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #229bff;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    letter-spacing: 2px;
+}
+
+#goal p {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    font-family: 'Baskerville Old Face', serif;
+    line-height: 1.3;
+}
+
+#projects {
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+}
+
+#projects-title {
+    font-size: 2.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #229bff;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    letter-spacing: 2px;
+}
+
+#project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    width: 260px;
+    height: 260px;
+    background: #181818;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card.center span {
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+}
+
+#project-detail {
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 30px;
+    letter-spacing: 4px;
+}
+
+#skills {
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+}
+
+#skills-title {
+    font-size: 2.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #229bff;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    letter-spacing: 2px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    margin-bottom: 48px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+}
+
+.skill-item img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 5px #229bff)
+            drop-shadow(0 0 15px #229bff);
+    display: block;
+}
+
+.skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 8px;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 10px;
+    background: #222;
+    border-radius: 5px;
+    margin: 0 6px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.progress {
+    height: 100%;
+    background: #229bff;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 5px #00bfff,
+                0 0 10px #00bfff,
+                0 0 20px #00bfff,
+                0 0 40px #00bfff;
+}
+
+#contact {
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+}
+
+#contact-title {
+    font-size: 2.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #229bff;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    letter-spacing: 2px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+#contact label {
+    font-size: 1.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    margin-bottom: 4px;
+    margin-left: 8px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    background: #aaa;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    min-height: 100px;
+}
+
+#contact button {
+    margin: 24px auto 0 auto;
+    display: block;
+    background: #229bff;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 36px;
+    cursor: pointer;
+    box-shadow: 0 0 16px #fff, 0 0 24px #229bff;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+#contact button:hover {
+    background: #00aaff;
+    color: #fff;
+    box-shadow: 0 0 24px #229bff, 0 0 32px #fff;
+}
+
+#instagram {
+    margin: 60px auto 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+}
+
+#instagram-title {
+    font-size: 2.5rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #f0f,
+        0 0 24px #f0f,
+        0 0 32px #f0f;
+    display: inline-block;
+    border-bottom: none;
+    position: relative;
+}
+
+#instagram-title::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+    width: 80%;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #fff 0%, #f0f 100%);
+    box-shadow:
+        0 0 8px #fff,
+        0 0 16px #f0f,
+        0 0 24px #f0f,
+        0 0 32px #f0f;
+}
+
+#instagram-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    margin-top: 30px;
+}
+
+#instagram-image {
+    width: 320px;
+    height: 380px;
+    background: #6e6a6a;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#instagram-image span {
+    color: #fff;
+    opacity: 0.8;
+}
+
+#instagram-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 380px;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    line-height: 2.2rem;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background: transparent; /* 背景を透明にしたい場合 */
+    color: #fff;             /* 文字色を白に */
+    text-align: center;
+    padding: 16px 0 8px 0;
+    font-size: 1.1rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+#loader {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader-ring {
+    width: 90px;
+    height: 90px;
+    border: 6px solid #229bff;
+    border-top: 6px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite, glow 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 24px #229bff, 0 0 48px #229bff;
+    margin-bottom: 24px;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+@keyframes glow {
+    0% { box-shadow: 0 0 24px #229bff, 0 0 48px #229bff; }
+    100% { box-shadow: 0 0 48px #00fff7, 0 0 96px #00fff7; }
+}
+
+.loader-text {
+    color: #fff;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #229bff, 0 0 16px #00fff7;
+}
+
+#scroll-down {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    font-family: Orbitron, 'Noto Sans JP', sans-serif;
+    letter-spacing: 2px;
+    z-index: 9998;
+    text-shadow: 0 0 8px #229bff, 0 0 16px #00fff7;
+    animation: scrollDownFade 1.2s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes scrollDownFade {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1);}
+    100% { opacity: 1; transform: translate(-50%, -45%) scale(1.1);}
+}
+
+/* 画面全体を最初は非表示に */
+body .main-content {
+    opacity: 0;
+    transform: translateY(60px); /* 最初は下に60pxずらす */
+    transition: opacity 1.2s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
+    pointer-events: none; /* 非表示中は操作不可 */
+}
+body.show-content .main-content {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置に */
+    pointer-events: auto;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    /* ヘッダー */
+    header {
+        height: 45px;
+    }
+    
+    header nav {
+        gap: 20px;
+    }
+    
+    header nav a {
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+    
+    /* ヒーローセクション */
+    .hero-top {
+        font-size: 1.8rem;
+        padding-top: 50px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .hero-left {
+        margin-left: 0;
+        order: 2;
+    }
+    
+    .hero-right {
+        order: 1;
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-right-top {
+        font-size: 1.8rem;
+    }
+    
+    .hero-right h1 {
+        font-size: 1.8rem;
+    }
+    
+    .intro {
+        font-size: 1.4rem;
+    }
+    
+    .degree {
+        font-size: 1.4rem;
+    }
+    
+    .profile-photo {
+        width: 180px;
+        height: 260px;
+    }
+    
+    .ps-icon {
+        width: 120px;
+        height: 120px;
+        margin-left: 0;
+    }
+    
+    /* About セクション */
+    #about {
+        font-size: 1.4rem;
+        padding: 24px 16px;
+        margin: 16px auto;
+        width: 95%;
+    }
+    
+    /* Goal セクション */
+    #goal h2 {
+        font-size: 2.5rem;
+    }
+    
+    #goal p {
+        font-size: 1.6rem;
+    }
+    
+    /* Projects セクション */
+    #project-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .project-card {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .project-card.center span {
+        font-size: 2.2rem;
+    }
+    
+    #project-detail {
+        font-size: 2.5rem;
+    }
+    
+    /* Skills セクション */
+    .skills-row {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
+    .skill-item {
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .skill-item img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    /* Contact セクション */
+    #contact form {
+        max-width: 90%;
+    }
+    
+    #contact label {
+        font-size: 1.2rem;
+    }
+    
+    #contact input,
+    #contact textarea {
+        font-size: 1.1rem;
+        padding: 10px 12px;
+    }
+    
+    #contact button {
+        font-size: 1.2rem;
+        padding: 8px 24px;
+    }
+    
+    /* Instagram セクション */
+    #instagram-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    #instagram-image {
+        width: 280px;
+        height: 320px;
+    }
+    
+    #instagram-description {
+        height: auto;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    
+    /* ローダー */
+    .loader-ring {
+        width: 70px;
+        height: 70px;
+        border-width: 4px;
+    }
+    
+    .loader-text {
+        font-size: 1.5rem;
+    }
+    
+    #scroll-down {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* さらに小さい画面用 */
+    /* ヘッダー */
+    header {
+        width: 100vw;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        padding: 0;
+    }
+    header nav {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        gap: 8px;
+        padding: 0 4px;
+        justify-content: center;
+    }
+    
+    header nav a {
+        font-size: 0.95rem;
+        padding: 7px 12px;
+    }
+    
+    .hero-top {
+        font-size: 1.5rem;
+    }
+    
+    .hero-right-top {
+        font-size: 1.5rem;
+    }
+    
+    .hero-right h1 {
+        font-size: 1.5rem;
+    }
+    
+    .intro {
+        font-size: 1.2rem;
+    }
+    
+    .degree {
+        font-size: 1.2rem;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 220px;
+    }
+    
+    .ps-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    #about {
+        font-size: 1.2rem;
+        padding: 20px 12px;
+    }
+    
+    #goal h2 {
+        font-size: 2rem;
+    }
+    
+    #goal p {
+        font-size: 1.3rem;
+    }
+    
+    #projects-title,
+    #skills-title,
+    #contact-title,
+    #instagram-title {
+        font-size: 2rem;
+    }
+    
+    .project-card {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .project-card.center span {
+        font-size: 1.8rem;
+    }
+    
+    #project-detail {
+        font-size: 2rem;
+    }
+    
+    .skill-item {
+        width: 160px;
+    }
+    
+    .skill-item img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .progress-bar {
+        width: 100px;
+    }
+    
+    #contact label {
+        font-size: 1.1rem;
+    }
+    
+    #contact input,
+    #contact textarea {
+        font-size: 1rem;
+    }
+    
+    #contact button {
+        font-size: 1.1rem;
+    }
+    
+    #instagram-image {
+        width: 240px;
+        height: 280px;
+    }
+    
+    #instagram-description {
+        font-size: 1.1rem;
+    }
+    
+    .loader-text {
+        font-size: 1.3rem;
+    }
+    
+    #scroll-down {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 320px) {
+    /* 非常に小さい画面用 */
+    /* ヘッダー */
+    header {
+        height: 40px;
+    }
+    
+    header nav {
+        gap: 14px;
+    }
+    
+    header nav a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+    
+    .hero-top {
+        font-size: 1.3rem;
+    }
+    
+    .hero-right-top {
+        font-size: 1.3rem;
+    }
+    
+    .hero-right h1 {
+        font-size: 1.3rem;
+    }
+    
+    .intro {
+        font-size: 1.1rem;
+    }
+    
+    .degree {
+        font-size: 1.1rem;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 180px;
+    }
+    
+    .ps-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #about {
+        font-size: 1.1rem;
+        padding: 16px 8px;
+    }
+    
+    #goal h2 {
+        font-size: 1.8rem;
+    }
+    
+    #goal p {
+        font-size: 1.2rem;
+    }
+    
+    #projects-title,
+    #skills-title,
+    #contact-title,
+    #instagram-title {
+        font-size: 1.8rem;
+    }
+    
+    .project-card {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .project-card.center span {
+        font-size: 1.5rem;
+    }
+    
+    #project-detail {
+        font-size: 1.8rem;
+    }
+    
+    .skill-item {
+        width: 140px;
+        margin: 0 auto;
+    }
+    
+    .skill-item img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .progress-bar {
+        width: 80px;
+    }
+    
+    #contact form {
+        max-width: 95%;
+    }
+    
+    #contact label {
+        font-size: 1rem;
+    }
+    
+    #contact input,
+    #contact textarea {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+    
+    #contact button {
+        font-size: 1rem;
+        padding: 6px 20px;
+    }
+    
+    #instagram-image {
+        width: 200px;
+        height: 240px;
+    }
+    
+    #instagram-description {
+        font-size: 1rem;
+    }
+    
+    .loader-text {
+        font-size: 1.1rem;
+    }
+    
+    #scroll-down {
+        font-size: 1.1rem;
+    }
+}
+
+
+
