@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ポートフォリオサイト">
+    <meta name="description" content="Hayato のポートフォリオサイト。HTML・CSS・JavaScript・React・PHP を使ったモダンな Web アプリケーションを制作しています。">
+    <meta name="author" content="Hayato">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hayato Portfolio">
+    <meta property="og:description" content="HTML・CSS・JavaScript・React・PHP を使ったモダンな Web アプリケーションを制作しています。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hayato Portfolio">
+    <meta name="twitter:description" content="HTML・CSS・JavaScript・React・PHP を使ったモダンな Web アプリケーションを制作しています。">
+    <!-- Canonical -->
+    <link rel="canonical" href="">
     <title>Hayato portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="loader">
+    <div id="loader" role="status" aria-label="読み込み中">
         <div class="loader-content">
             <div class="loader-ring"></div>
             <div class="loader-text">Loading...</div>
         </div>
     </div>
-    <div id="scroll-down" style="display:none;">
+    <div id="scroll-down" style="display:none;" aria-hidden="true">
         <span>↓ 下にスクロール ↓</span>
     </div>
         <header>
-            <nav>
+            <nav aria-label="メインナビゲーション">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -30,9 +42,9 @@
         <div class="hero-top">
             <p>Designing with precision.</p>
         </div>
-        <section class="hero">
+        <section class="hero" aria-label="ヒーロー">
             <div class="hero-left">
-                <img src="imges/my-photo.jpg" alt="プロフィール写真" class="profile-photo">
+                <img src="images/my-photo.jpg" alt="Hayato のプロフィール写真" class="profile-photo" loading="eager" width="220" height="320">
                 <p class="degree">Bachelor's degree in Engineering<br>from Osaka Institute of Technology.</p>
             </div>
             <div class="hero-right">
@@ -43,10 +55,10 @@
                     elegant, and reactive interfaces.
                 </p>
                 <div class="skill-item">
-                    <img src="imges/photoshop-icon.png" alt="Photoshop" class="ps-icon">
+                    <img src="images/photoshop-icon.png" alt="Photoshop" class="ps-icon" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Photoshop 習熟度">
                             <div class="progress" style="width: 70%;"></div>
                         </div>
                         <span>70%</span>
@@ -55,7 +67,8 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="sr-only">About</h2>
             <p id="about-text">
                 I started learning programming about a year ago, simply out of curiosity.<br>
                 As I began writing my first lines of code and saw them come to life,<br>
@@ -66,7 +79,7 @@
             </p>
         </section>
 
-        <section id="goal">
+        <section id="goal" aria-labelledby="goal-title">
             <h2 id="goal-title">My goal</h2>
             <p id="goal-desc">
                 is to create interactive web applications<br>
@@ -74,7 +87,7 @@
             </p>
         </section>
 
-        <section id="projects">
+        <section id="projects" aria-labelledby="projects-title">
             <h2 id="projects-title">Projects</h2>
             <div id="project-list">
                 <div class="project-card"></div>
@@ -88,62 +101,64 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" aria-labelledby="skills-title">
             <h2 id="skills-title">Skills</h2>
             <div class="skills-row">
                 <div class="skill-item">
-                    <img src="imges/HTML-icon.png" alt="HTML5">
+                    <img src="images/HTML-icon.png" alt="HTML5" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 習熟度"><div class="progress" style="width: 90%;"></div></div>
                         <span>90%</span>
                     </div>
                 </div>
                 <div class="skill-item">
-                    <img src="imges/css-icon.png" alt="CSS3">
+                    <img src="images/css-icon.png" alt="CSS3" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 習熟度"><div class="progress" style="width: 90%;"></div></div>
                         <span>90%</span>
                     </div>
                 </div>
                 <div class="skill-item">
-                    <img src="imges/javascript-icon.png" alt="JavaScript" class="javascript-icon">
+                    <img src="images/javascript-icon.png" alt="JavaScript" class="javascript-icon" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript 習熟度"><div class="progress" style="width: 70%;"></div></div>
                         <span>70%</span>
                     </div>
                 </div>
             </div>
             <div class="skills-row">
                 <div class="skill-item">
-                    <img src="imges/php-icon.svg" alt="PHP">
+                    <img src="images/php-icon.svg" alt="PHP" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="PHP 習熟度"><div class="progress" style="width: 50%;"></div></div>
                         <span>50%</span>
                     </div>
                 </div>
                 <div class="skill-item">
-                    <img src="imges/REact-icon.png" alt="React">
+                    <img src="images/REact-icon.png" alt="React" loading="lazy" width="160" height="160">
                     <div class="skill-progress">
                         <span>Progress</span>
-                        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="React 習熟度"><div class="progress" style="width: 70%;"></div></div>
                         <span>70%</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" aria-labelledby="contact-title">
             <h2 id="contact-title">contact</h2>
-            <form action="send_mail.php" method="post">
+            <form id="contact-form" action="send_mail.php" method="post" novalidate>
+                <div id="form-error" class="form-error" role="alert" aria-live="polite"></div>
+
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required autocomplete="name">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required autocomplete="email">
 
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" required>
@@ -155,11 +170,11 @@
             </form>
         </section>
 
-        <section id="instagram">
+        <section id="instagram" aria-labelledby="instagram-title">
             <h2 id="instagram-title">Instagram</h2>
             <div id="instagram-content">
                 <div id="instagram-image">
-                    <span>ココに作品を載せていく</span>
+                    <span>ここに作品を載せていく</span>
                 </div>
                 <div id="instagram-description">
                     <p>作品の説明文<br>
@@ -169,7 +184,6 @@
             </div>
         </section>
     </div>
-</div>
 
     <footer>
         <p>&copy; 2025 Hayato portfolio. All rights reserved.</p>
