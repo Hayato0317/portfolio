@@ -1,3 +1,25 @@
+// ハンバーガーメニュー
+(function() {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.getElementById('main-nav');
+    if (!hamburger || !nav) return;
+
+    hamburger.addEventListener('click', function() {
+        const isOpen = nav.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // リンクをタップしたら閉じる
+    nav.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+            nav.classList.remove('open');
+            hamburger.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+})();
+
 window.addEventListener('load', function() {
   const loader = document.getElementById('loader');
   const scrollDown = document.getElementById('scroll-down');
