@@ -1,6 +1,6 @@
 <?php
 // 宛先メールアドレス（実際のアドレスに変更してください）
-define('TO_EMAIL', 'your-email@example.com');
+define('TO_EMAIL', 'hayato.nakano.0317@gmail.com');
 define('SITE_NAME', 'Hayato Portfolio');
 
 // POST メソッド以外は拒否
